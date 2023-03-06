@@ -12,4 +12,6 @@ tablesimple: Tạo table cơ bản
 
 timetable: Tạo table thời khóa biểu cơ bản
 
+userform: tạo trang đăng kí user
+
 CV: tự tạo CV của bản thân
