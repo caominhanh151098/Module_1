@@ -8,18 +8,93 @@
 </head>
 <body>
     <form action="" method="get">
-        <p>Họ và tên</p>
-        <input type="text" name="yourname" size="20"><br/>
-        <p>Email</p>
-        <input type="text" name="email" size="15">
-        <p>Sở thích:</p>
-        <label><input type="checkbox" name="hobby" value="sport">Thể thao</label>
-        <label><input type="checkbox" name="hobby" value="music">Âm nhạc</label>
-        <label><input type="checkbox" name="hobby" value="read">Đọc sách</label><br/>
-        <label><input type="checkbox" name="hobby" value="web">Lướt web</label>
-        <label><input type="checkbox" name="hobby" value="game">Chơi game</label>
-        <label><input type="checkbox" name="hobby" value="film">Điện ảnh</label>
-        <label><input type="checkbox" name="hobby" value="travel">Du lịch</label>
+        <table>
+            <caption style="background-color: orangered; color: azure;">Sở thích của bạn</caption>
+            <tbody>
+                <tr>
+                    <td align="right"  style="color: #4444f0;">Họ và tên</td>
+                    <td colspan="2"><input type="text" placeholder="Your name"></td>
+                </tr>
+                <tr>
+                    <td align="right" style="color: #4444f0;">Email</td>
+                    <td colspan="2"><input type="email" placeholder="Your email"></td>
+                </tr>
+                <tr>
+                    <td align="right" style="color: #4444f0;">Sở thích</td>
+                    <td style="color: #ee7c52;"><input type="checkbox" name="hobby" value="sport">Thể thao</td>
+                    <td style="color: #ee7c52;"><input type="checkbox" name="hobby" value="music">Âm nhạc</td>
+                    <td style="color: #ee7c52;"><input type="checkbox" name="hobby" value="read">Đọc sách</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td style="color: #ee7c52;"><input type="checkbox" name="hobby" value="web">Lướt web</td>
+                    <td style="color: #ee7c52;"><input type="checkbox" name="hobby" value="game">Chơi game</td>
+                    <td style="color: #ee7c52;"><input type="checkbox" name="hobby" value="film">Điện ảnh</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td style="color: #ee7c52;"><input type="checkbox" name="hobby" value="travel">Du lịch</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" name="btsubmit" value="Gửi thông tin"></td>
+                    <td><input type="reset" value="Nhập lại"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+        <table style="background-color: #f5f58b;">
+            <caption style="background-color: #00ffff; color: #0000ff;">ĐĂNG KÝ HỌC VIÊN</caption>
+            <tbody>
+                <tr>
+                    <td style="width: 100px; color: #0000ff;" >Họ và tên</td>
+                    <td colspan="2"><input type="text" name="stdname" placeholder="Your Name" style="width: 200px;"></td>
+                </tr>
+                <tr>
+                    <td style="width: 100px; color: #0000ff;" >Ngày sinh</td>
+                    <td colspan="2"><input type="date" name="birthday"></td>
+                </tr>
+                <tr>
+                    <td style="width: 100px; color: #0000ff;" >Giới tính</td>
+                    <td style="width: 60px;"><input type="radio" name="gender" value="male">Nam</td>
+                    <td><input type="radio" name="gender" value="female">Nữ</td>
+                </tr>
+                <tr>
+                    <td style="width: 100px; color: #0000ff;" >Địa chỉ</td>
+                    <td colspan="2"><textarea name="address"cols="20" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td style="width: 100px; color: #0000ff;" >Lớp</td>
+                    <td colspan="2">
+                        <select name="class" >
+                            <option value="">- Chọn Lớp -</option>
+                            <option value="C0220K1">C0220K1</option>
+                            <option value="C0220K1">C0320G1</option>
+                            <option value="C0220K1">C0223G1</option>
+                            <option value="C0220K1">C0223G2</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 100px; color: #0000ff;" >Email</td>
+                    <td colspan="2"><input type="email" name="email" placeholder="Your Email"></td>
+                </tr>   
+                <tr>
+                    <td style="width: 100px; color: #0000ff;" >Điện thoại</td>
+                    <td colspan="2"><input type="tel" name="phone" placeholder="Your Number Phone"></td>
+                </tr>   
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" name="btsubmit1" value="Đăng kí"></td>
+                    <td><input type="reset" value="Nhập lại"></td>
+                </tr>
+            </tfoot>
+        </table>
+    <form>
 
     </form>
 </body>
