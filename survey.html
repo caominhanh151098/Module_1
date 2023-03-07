@@ -14,7 +14,7 @@
     <form action="">
         <h4 style="margin-bottom: 0;">What is your age range?</h4>
         <select name="age" style="width: 200px; ">
-            <option value="">Choice 18-24</option>
+            <option value="">18-24</option>
             <option value="18">18</option>
             <option value="18">19</option>
             <option value="18">20</option>
@@ -46,15 +46,15 @@
         <h4 style="margin-bottom: 0;">How often would you use our new product?</h4>
         <input type="radio" name="time" value="day">Daily<br>
         <input type="radio" name="time" value="week">Weekly<br>
-        <input type="radio" name="gender" value="month">Monthly
+        <input type="radio" name="time" value="month">Monthly
 
         <h4 style="margin-bottom: 0;">What would you pay for the new product?</h4>
         <table>
             <tr>
                 <td>&dollar;</td>
-                <td><input type="text" name="dollar" style="width: 70px;"></td>
+                <td><input type="number" name="dollar" style="width: 70px;"></td>
                 <td>.</td>
-                <td><input type="text" name="cent" style="width: 30px;"></td>
+                <td><input type="number" name="cent" style="width: 30px;"></td>
                 </label>
             </tr>
             <tr>
@@ -69,7 +69,7 @@
         <textarea name="feature" cols="100" rows="10"></textarea>
 
         <p style="margin-bottom: 0;">Please rate your level of agreement with the following statements.</p>
-        <table border="1px">
+        <table border="1px" style="border-collapse: collapse;">
             <thead>
                 <tr style="background-color: #d2d2d2;">
                     <th></th>

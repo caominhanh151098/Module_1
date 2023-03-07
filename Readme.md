@@ -10,7 +10,8 @@ Simpleform: Tạo form cơ bản
 
 tablesimple: Tạo table cơ bản
 
-timetable: Tạo table thời khóa biểu cơ bản
+timetable: [Thực hành] Tạo table thời khóa biểu cơ bản
+timetable2: [Bài tập] Tạo table thời khóa biểu cơ bản
 
 userform: tạo trang đăng kí user
 
