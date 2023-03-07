@@ -16,4 +16,6 @@ userform: tạo trang đăng kí user
 
 studentform: tạo trang đăng kí Student
 
+survey: tạo form lấy survey khách hàng
+
 CV: tự tạo CV của bản thân
