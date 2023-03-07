@@ -14,4 +14,6 @@ timetable: Tạo table thời khóa biểu cơ bản
 
 userform: tạo trang đăng kí user
 
+studentform: tạo trang đăng kí Student
+
 CV: tự tạo CV của bản thân
