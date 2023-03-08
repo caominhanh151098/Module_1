@@ -1,0 +1,29 @@
+form h4, p {
+    margin: 0;;
+}
+
+
+
+table tbody tr td {
+    text-align: center;
+}
+
+table tbody tr th {
+    text-align: left;
+}
+
+div {
+    padding: 10px;
+}
+
+form div:hover {
+    background-color: rgb(255, 255, 157);
+    transition: ease-in-out .5s;
+}
+
+#table table tr:nth-child(odd){
+    background-color: #d2d2d2;;
+}
+
+
+
