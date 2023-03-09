@@ -4,143 +4,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bàn cờ vua</title>
-    <style>
-        #orange{
-            background-color: #ff9d00;
-        }
-
-        table {
-            border-collapse: collapse;
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        td {
-            width: 50px;
-            height: 50px;
-        }
-        #A td:nth-child(even){
-            background-color: white;
-        }
-        #A td:nth-child(odd){
-            background-color: black;
-        }
-        #B td:nth-child(even){
-            background-color: black;
-        }
-        #B td:nth-child(odd){
-            background-color: white;
-        }
-        #bottom {
-            vertical-align: bottom;
-        }
-    </style>
+    <title>Chess</title>
+    <link rel="stylesheet" href="css.css">
 </head>
 <body>
-    <fieldset id="orange" style="width: 520px; height: 520px;">
-    <table>
-        
-        <tr>
-            <td></td>
-            <td id="bottom">1</td>
-            <td id="bottom">2</td>
-            <td id="bottom">3</td>
-            <td id="bottom">4</td>
-            <td id="bottom">5</td>
-            <td id="bottom">6</td>
-            <td id="bottom">7</td>
-            <td id="bottom">8</td>
-            
-        </tr>
-        <tr id="A">
-            <td align="right" style="background-color: #ff9d00;">A</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr id="B">
-            <td align="right" style="background-color: #ff9d00;">B</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr id="A">
-            <td align="right" style="background-color: #ff9d00;">C</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr id="B">
-            <td align="right" style="background-color: #ff9d00;">D</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr id="A">
-            <td align="right" style="background-color: #ff9d00;">E</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr id="B">
-            <td align="right" style="background-color: #ff9d00;">F</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr id="A">
-            <td align="right" style="background-color: #ff9d00;">G</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr id="B">
-            <td align="right" style="background-color: #ff9d00;">H</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
-</fieldset>
+    <div>
+        <table>
+            <tbody>
+                <tr class="bottom">
+                    <td></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td class="right">A</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="right">B</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="right">C</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="right">D</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="right">E</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="right">F</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="right">G</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="right">H</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
