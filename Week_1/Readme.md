@@ -23,3 +23,5 @@ survey: tạo form lấy survey khách hàng
 chess&calendar: Tạo web bàn cờ vua và lịch 
 
 CV: tự tạo CV của bản thân
+
+Anh CV's: CV mới áp dụng table&css

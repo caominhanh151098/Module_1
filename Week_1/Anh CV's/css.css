@@ -1,0 +1,74 @@
+div.background {
+    width: 1200px;
+    background-color: #b6b6ff;
+    margin: auto;
+}
+
+table {
+    border-collapse: collapse ;
+}
+
+table.center {
+    margin: auto;
+    border: 1px solid rgb(0, 51, 190);
+    background-color: #fff;
+}
+
+table thead th {
+    text-align: left;
+    
+}
+
+table tbody th {
+    text-align: left;
+}
+
+th {
+    font-size: 24px;
+}
+
+td {
+    font-size: 20px;
+}
+
+td + th {
+    padding-left: 0px !important;
+}
+
+th>img {
+    width: 300px;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+td>img {
+    height: 15px;
+    width: 15px;
+}
+
+table>tbody>tr:hover {
+    color: #ff0000;
+    background-color: #fffd7b;
+    transition: 1s;
+}
+
+th, td {
+    padding: 30px;
+}
+
+td.width {
+    width: 700px;
+}
+
+ul {
+    padding-left: 15px;
+    margin: 0px;
+}
+
+
+
+
+
+
+
+
