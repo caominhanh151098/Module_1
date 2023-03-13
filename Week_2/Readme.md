@@ -11,4 +11,6 @@ Toan_Tu: Thực hành Sử dụng toán tử
 
 BaiTap_Bien_Biendulieu: Bài tập Biến, kiểu dữ liệu và toán tử
 
+Money: Bài tập chuyển đổi giá trị tiền tệ
+
 Car: BT ex Car
