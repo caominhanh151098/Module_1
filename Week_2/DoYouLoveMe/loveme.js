@@ -7,9 +7,9 @@ function answer() {
 
 function isjoke() {
     let obj = document.getElementById("nobtn");
-    let a = window.innerWidth;
+    let a = window.innerWidth - parseInt(obj.style.left);
     console.log(a);
-    let b = window.innerHeight; 
+    let b = window.innerHeight - parseInt(obj.style.top);; 
     console.log(b);
 
     let x = Math.random() * a;
