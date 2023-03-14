@@ -21,4 +21,6 @@ ex01, Login: Thực hành If/Else
 
 Switch_case: Thực hành Switch/case
 
+Ternary_Op: Thực hành toán tử 3 ngôi
+
 Car: BT ex Car
