@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caculator</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <form action="">
+        <table border="1px">
+            <caption><h3>Caculator</h3></caption>
+            <tbody>
+                <tr>
+                    <td colspan="4"><input class="result" type="text" id="result" disabled></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input class="col2" type="submit" value="C"></td>
+                    <td><input type="button" value="DEL" onclick="backspace()"</td>
+                    <td><input type="button" value="/" onclick="Input(value)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="7" onclick="Input(value)"></td>
+                    <td><input type="button" value="8" onclick="Input(value)"></td>
+                    <td><input type="button" value="9" onclick="Input(value)"></td>
+                    <td><input type="button" value="*" onclick="Input(value)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="4" onclick="Input(value)"></td>
+                    <td><input type="button" value="5" onclick="Input(value)"></td>
+                    <td><input type="button" value="6" onclick="Input(value)"></td>
+                    <td><input type="button" value="-" onclick="Input(value)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="1" onclick="Input(value)"></td>
+                    <td><input type="button" value="2" onclick="Input(value)"></td>
+                    <td><input type="button" value="3" onclick="Input(value)"></td>
+                    <td><input type="button" value="+" onclick="Input(value)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="0" onclick="Input(value)"></td>
+                    <td><input type="button" value="." onclick="Input(value)"></td>
+                    <td colspan="2"><input class="col2" type="button" value="=" onclick="end()"></td>
+                </tr>
+            </tbody>
+        </table>
+        <label id="cache">1</label>
+    </form>
+
+    <script src="calculator.js"></script>
+</body>
+</html>

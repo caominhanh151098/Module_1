@@ -13,4 +13,6 @@ BaiTap_Bien_Biendulieu: Bài tập Biến, kiểu dữ liệu và toán tử
 
 Money: Bài tập chuyển đổi giá trị tiền tệ
 
+Calculator: Bài tập giả lập máy tính
+
 Car: BT ex Car
