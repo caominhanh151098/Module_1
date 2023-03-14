@@ -19,6 +19,6 @@ Leap_Year: Thực hành kiểm tra năm nhuận
 
 ex01, Login: Thực hành If/Else
 
-Browser: Thực hành Switch/case
+Switch_case: Thực hành Switch/case
 
 Car: BT ex Car
