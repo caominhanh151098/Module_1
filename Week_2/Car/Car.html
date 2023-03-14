@@ -7,34 +7,9 @@
     <title>Car</title>
     <link rel="stylesheet" href="car.css">
 </head>
-<body>
-    <!-- Điều khiển bằng nút Button -->
-
-    <!-- <div>
-        <table>
-            <tbody>
-                <tr>
-                    <td></td>
-                    <td><button onclick="MoveUP()">Go Up</button></td>
-                </tr>
-                <tr>
-                    <td><button onclick="MoveLeft()" >Go Left</button></td>
-                    <td><img src="carGoUp.png" alt="car.png" id="car"></td>
-                    <td><button onclick="MoveRight()" >Go Right</button></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><button onclick="MoveDown()" >Go Down</button></td>
-                </tr>
-            </tbody>
-        </table>  
-    </div> -->
-
-    <!-- Điều kiển bằng nút mũi tên -->
-
+<body onload="">
     <div>
-        <input type="text" onkeydown="move(event)" style="width: 10px;">
-        <img src="carGoUp.png" alt="car.png" id="car" onkeydown="move(event)">
+        <img id="car" src="carGoRight.png" style="position:absolute;left:0; top:0;" alt="car.png">
     </div>
     <script src="car.js"></script>
 </body>
