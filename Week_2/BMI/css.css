@@ -1,0 +1,12 @@
+td {
+    padding: 10px;
+}
+
+.fill {
+    background-color: #ffff69;
+    transition: ease-in-out .9ms;
+}
+
+table.border {
+    border: 1px solid;
+}
