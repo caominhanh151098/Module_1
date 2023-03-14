@@ -28,3 +28,5 @@ Move_Ball: Thực hành mouse event
 Car: BT ex Car/Thực hành sự kiện bàn phím
 
 BMI: Bài tập Tính chỉ số cân nặng của cơ thể
+
+dayOfMonth: Câu lệnh switch-case làm bài tập ngày trong tháng
