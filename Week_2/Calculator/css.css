@@ -13,6 +13,7 @@ input.col2 {
 
 input.result {
     width: 260px;
+    text-align: right;
 }
 
 input {

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 7</title>
+</head>
+<body>
+    <table border="1px">
+        <thead>
+            <tr>
+                <th>Thời gian:</th>
+                <th>Cước:</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Time &lt; 10p</td>
+                <td>1.650đ</td>
+            </tr>
+            <tr>
+                <td>10p ≤ Time &lt; 30p</td>
+                <td>1.150đ</td>
+            </tr>
+            <tr>
+                <td>30p ≤ Time</td>
+                <td>MIỄN PHÍ</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        let a = parseInt(prompt("Nhập số Thời gian(phút):"));
+
+        while (a < 0) {
+            alert("Nhập số dương!!")
+            a = parseInt(prompt("Nhập số Thời gian(phút):"));
+        }
+        if (a < 10) {
+            result = a * 1650;
+            alert("Tiền điện thoại: " + result + "đ");
+        } else 
+            if (a < 30) {
+                result = (a - 9) * 1150 + 9 * 1650;
+                alert("Tiền điện thoại: " + result + "đ");
+            } else {
+                result = 20 * 1150 + 9 * 1650;
+                alert("Tiền điện thoại: " + result + "đ");
+            }
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 6</title>
+</head>
+<body>
+    <table border="1px">
+        <thead>
+            <tr>
+                <th>Doanh số</th>
+                <th>Hưởng hoa hồng</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Đã bán &lt; 100</td>
+                <td>3%</td>
+            </tr>
+            <tr>
+                <td>100 ≤ Đã bán &lt; 200</td>
+                <td>5%</td>
+            </tr>
+            <tr>
+                <td>200 ≤ Đã bán &lt; 300</td>
+                <td>7%</td>
+            </tr>
+            <tr>
+                <td>300 ≤ Đã bán</td>
+                <td>10%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        let a = parseInt(prompt("Nhập doanh số: "));
+
+        while (a < 0) {
+            a = parseInt(prompt("Nhập doanh số: "));
+        }
+            if (a < 100) {
+                alert("Hưởng 3% hoa hồng")
+            } else
+                if (a > 100 && 200 > a) {
+                    alert("Hưởng 5% hoa hồng")
+                } else 
+                    if (a > 200 && 300 > a) {
+                        alert("Hưởng 7% hoa hồng")
+                    } else {
+                        alert("Hưởng 10% hoa hồng")
+                    }
+    </script>
+</body>
+</html>
