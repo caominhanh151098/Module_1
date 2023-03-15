@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 7</title>
+</head>
+<body>
+
+    <script>
+            let a = parseInt(prompt("Nhập số a:", 0));
+            let b = parseInt(prompt("Nhập số b:", 0));
+            let c = parseInt(prompt("Nhập số c:", 0));
+            alert(a + "x^2 + " + b + "x + " + c + "= 0");
+            if (a != 0) {
+                let delta = b * b - 4 * a * c;
+                if (delta < 0) {
+                    alert("Phương trình vô nghiệm!");
+                } else if (delta == 0) {
+                    let result = -(b/2*a); 
+                    alert("Phương trình có nghiệm kép x1 = x2 =" + result);
+                } else {
+                    let x1 = (-b + Math.sqrt(delta)) / (2*a);
+                    let x2 = (-b - Math.sqrt(delta)) / (2*a);
+                   alert("Phương trình có nghiệm:");
+                   alert("x1 =" + x1);
+                   alert("x2 =" + x2);
+               }
+            } else 
+                if (b != 0) {
+                    let x = -c/b;
+                    alert("Phương trình có nghiệm:");
+                    alert("x =" + x);
+                } else
+                    if (c == 0) {
+                        alert("Phương trình có vô số nghiệm!");
+                    }
+
+    </script>
+</body>
+</html>

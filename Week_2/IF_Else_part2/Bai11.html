@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 11</title>
+</head>
+<body>
+    <table border="1px"> 
+        <thead>
+            <tr>
+                <th>Bậc</th>
+                <th>Thu nhập tính thuế/tháng</th>
+                <th>Thuế suất</th>
+                <th>Tính số thuế phải nộp</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Đến 5 triệu đồng</td>
+                <td>5%</td>
+                <td>5% TNTT</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Trên 5 triệu đồng đến 10 triệu đồng</td>
+                <td>10%</td>
+                <td>10% TNTT - 0,25 triệu đồng</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Trên 10 triệu đồng đến 18 triệu đồng</td>
+                <td>15%</td>
+                <td>15% TNTT - 0,75 triệu đồng</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Trên 18 triệu đồng đến 32 triệu đồng</td>
+                <td>20%</td>
+                <td>20% TNTT - 1,65 triệu đồng</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Trên 32 triệu đồng đến 52 triệu đồng</td>
+                <td>25%</td>
+                <td>25% TNTT - 3,25 triệu đồng</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Trên 52 triệu đồng đến 80 triệu đồng</td>
+                <td>30%</td>
+                <td>30% TNTT - 5,85 triệu đồng</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Trên 80 triệu đồng</td>
+                <td>35%</td>
+                <td>35% TNTT - 9,85 triệu đồng</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        let a;
+        do {
+            a = parseInt(prompt("Nhập Thu nhập tính thuế/tháng(triệu đồng):", 0));
+        }
+        while (a < 0)
+        console.log(a);
+        if (a < 5) {
+            let result = a * 5 / 100;
+            alert("Thuế phải nộp: " + result + "tr.đ");
+            console.log("a");
+        } else 
+            if (a < 10) {
+                let result = (a * 10 / 100) - 0.25;
+                alert("Thuế phải nộp: " + result + " tr.đ");
+                console.log("b");
+            } else
+                if (a < 18) {
+                    let result = (a * 15 / 100) - 0.75;
+                    alert("Thuế phải nộp: " + result + " tr.đ");
+                    console.log("c");
+                } else 
+                    if (a < 32) {
+                        let result = (a * 20 / 100) - 1.65;
+                        alert("Thuế phải nộp: " + result + " tr.đ");
+                        console.log("d");
+                    } else 
+                        if (a < 52) {
+                            let result = (a * 25 / 100) - 3.25;
+                            alert("Thuế phải nộp: " + result + " tr.đ");
+                            console.log("e");
+                        } else 
+                            if (a < 80) {
+                                let result = (a * 30 / 100) - 5.85;
+                                alert("Thuế phải nộp: " + result + " tr.đ");
+                                console.log("F");
+                            } else {
+                                let result = (a * 35 / 100) - 9.85;
+                                alert("Thuế phải nộp: " + result + " tr.đ");
+                            }
+    </script>
+</body>
+</html>

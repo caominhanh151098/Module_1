@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let a = parseInt(prompt("Nhập số tiền ban đầu:"));
+        let b = parseInt(prompt("Nhập số tháng cho vay:"));
+        let c = parseInt(prompt("Nhập lãi xuất hàng tháng(%):"));
+
+        let result = a;
+        for (let i = 1; i < b; i ++) {
+            result = result + result * c / 100;
+            console.log(result);
+        }
+        alert("Tiền lãi: " + Math.floor(result) + "đ");
+    </script>
+</body>
+</html>
