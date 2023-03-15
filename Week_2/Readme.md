@@ -32,3 +32,5 @@ BMI: Bài tập Tính chỉ số cân nặng của cơ thể
 dayOfMonth: Câu lệnh switch-case làm bài tập ngày trong tháng
 
 DoYouLoveMe: Ứng dụng vui 
+
+Game: Tạo game Puzzle điều khiển bằng nút mũi tên
