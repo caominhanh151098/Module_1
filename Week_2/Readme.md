@@ -35,4 +35,6 @@ DoYouLoveMe: Ứng dụng vui
 
 Game: Tạo game Puzzle điều khiển bằng nút mũi tên
 
+Good_Fast_Cheap: Ứng dụng GFC troller
+
 IF_Else: BT Luyện tập cấu trúc điều kiện
