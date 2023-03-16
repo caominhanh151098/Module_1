@@ -46,7 +46,6 @@ function random() {
 }
 
 function switchIMG(item) {
-    document.getElementById(item);
     let random = Math.floor(Math.random() * 5 + 1);
     let animal = "";
     switch (random) {
