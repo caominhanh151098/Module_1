@@ -5,19 +5,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bài 10</title>
+    <style>
+        table {
+            border: 2px solid;
+            border-collapse: collapse;
+            margin: 5px;
+        }
+
+        th, td {
+            border: 1px solid;
+        }
+    </style>
 </head>
 <body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Sản lượng (kWh)</th>
+                <th>Giá điện (đồng/kWh)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Bậc thang 1</td>
+                <td>0 - 50</td>
+                <td>1678</td>
+            </tr>
+            <tr>
+                <td>Bậc thang 2</td>
+                <td>51 - 100</td>   
+                <td>1734</td>
+            </tr>
+            <tr>
+                <td>Bậc thang 3</td>
+                <td>101 - 200</td>
+                <td>2014</td>
+            </tr>
+            <tr>
+                <td>Bậc thang 4</td>
+                <td>201 - 300</td>
+                <td>2536</td>
+            </tr>
+            <tr>
+                <td>Bậc thang 5</td>
+                <td>301 - 400</td>
+                <td>2834</td>
+            </tr>
+            <tr>
+                <td>Trên 400</td>
+                <td>0 - 50</td>
+                <td>2927</td>
+            </tr>
+        </tbody>
+
+        <table>
+            <tbody>
+                <tr>
+                    <td>Nhập chỉ số điện:</td>
+                    <td><input id="input" type="text"></td>
+                    <td><input id="btn" type="button" value="Tính"></td>
+                    <td><label id="result"></label></td>
+                </tr>
+            </tbody>
+        </table>
+    </table>
     
 
     <script>
-        do {
-            let a = parseInt(prompt("Nhập chỉ số điện(kWh):"));
-        }
-        while (a < 0)
-           
-        result = a * 1826;
+        document.getElementById("btn").addEventListener("click", money);
 
-        alert ("Tiền điện: " + result + "đ");
+        function money() {
+            let x = +document.getElementById("input").value;
+
+            let result = x < 0 ? "Nhập lỗi" :
+                x <= 50 ? `Tiền: ${x * 1678}` :
+                    x <= 100 ? `Tiền: ${50 * 1678 + (x - 50) * 1734}đ` :
+                        x <= 200 ? `Tiền: ${50 * 1678 + 50 * 1734 + (x - 100) * 2014}đ` :
+                            x <= 300 ? `Tiền: ${50 * 1678 + 50 * 1734 + 100 * 2014 + (x - 200) * 2536}đ` :
+                                x <= 400 ? `Tiền: ${50 * 1678 + 50 * 1734 + 100 * 2014 + 100 * 2536 + (x - 300) * 2834}đ` :
+                                    `Tiền: ${50 * 1678 + 50 * 1734 + 100 * 2014 + 100 * 2536 + 100 * 2834 + (x - 400) * 2927}đ`;
+
+            document.getElementById("result").innerText = result;
+        }
+
+        
     </script>
 </body>
 </html>
