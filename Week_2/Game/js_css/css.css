@@ -63,8 +63,11 @@ table.game tbody tr td img {
 }
 
 div.win {
-    background-color: rgb(255, 130, 130);
     width: 420px;
     height: 400px;
     float: left;
+}
+
+tr.win td {
+    box-shadow: 50px 50px 50px #ff2929cc;
 }

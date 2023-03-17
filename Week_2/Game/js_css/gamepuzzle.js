@@ -2,24 +2,24 @@ window.addEventListener("load", random)
 
 document.getElementById("1").addEventListener("click", (item) => {
     switchIMG(item.target.id);
-});
+})
 document.getElementById("2").addEventListener("click", (item) => {
     switchIMG(item.target.id);
-});
+})
 document.getElementById("3").addEventListener("click", (item) => {
     switchIMG(item.target.id);
-});
+})
 document.getElementById("4").addEventListener("click", (item) => {
     switchIMG(item.target.id);
-});
+})
 document.getElementById("5").addEventListener("click", (item) => {
     switchIMG(item.target.id);
-});
+})
 
 function random() {
     let list = document.querySelectorAll("img");
     list.forEach((item) => {
-        let random = Math.floor(Math.random() * 5 + 1);
+        let random = Math.ceil(Math.random() * 5);
         let animal = "";
         switch (random) {
         case 1:
@@ -40,13 +40,15 @@ function random() {
         }
         //console.log(item.src);
         let srcimg = `Puzzle/${animal}/img-${item.id}.png`;
-        console.log(srcimg);
         document.getElementById(item.id).src = srcimg;
     })
 }
 
 function switchIMG(item) {
-    let random = Math.floor(Math.random() * 5 + 1);
+    let srcIMG = document.getElementById(item).src;
+    let src = "";
+    do {
+    let random = Math.ceil(Math.random() * 5);
     let animal = "";
     switch (random) {
         case 1:
@@ -65,7 +67,9 @@ function switchIMG(item) {
             animal = "procyonid";
             break;
     }
-    let src = `Puzzle/${animal}/img-${item}.png`;
+    src = `http://127.0.0.1:5500/Week_2/Game/Puzzle/${animal}/img-${item}.png`;
+    } while (src == srcIMG);
+ 
     document.getElementById(item).src = src;
     
     win();
@@ -76,10 +80,12 @@ function win() {
     if (checkwin()) {
         document.getElementById("div").className = "win";
         document.getElementById("result").innerText = "YOU WIN!";
+        document.getElementById("bgrwin").className = "win";
     }
     else {
         document.getElementById("div").className = "";
         document.getElementById("result").innerText = "";
+        document.getElementById("bgrwin").className = "";
     }
 }
 
