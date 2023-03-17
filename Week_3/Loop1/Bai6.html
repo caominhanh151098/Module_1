@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 6</title>
+</head>
+<body>
+    
+    <script>
+        alert("Tính tổng của N số chia hết cho 7 đầu tiên trong các số tự nhiên! ");
+        let numbers = Number(prompt("Nhập số N: "));
+        let count = 1;
+        let sum = 0;
+        let int = 1;
+
+        /* Cách 1 */
+        while (count <= numbers) {
+            if (int % 7 == 0) {
+                count ++;
+                sum += int;
+                console.log(int);
+            }
+            int ++;
+        }
+
+        /* Cách 2 */
+        // for (let int = 1; int <= numbers; int++) {
+        //     sum += int * 7;
+        //     console.log(int * 7);
+        // }
+
+        
+        document.write(sum);
+        
+    </script>
+</body>
+</html>

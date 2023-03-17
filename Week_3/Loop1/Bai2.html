@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2</title>
+</head>
+<body>
+    
+    <script>
+        let C = Number(prompt("Nhập nhiệt độ hiện tại", 0));
+
+        while (C < 20) {
+            alert("Nhiệt độ quá THẤP, Nhập số khác cao hơn đi!!!");
+            C = Number(prompt("Nhập nhiệt độ hiện tại", 0));
+        }
+        while (C > 100) {
+            alert("Nhiệt độ quá CAO, Nhập số khác cao hơn đi!!!");
+            C = Number(prompt("Nhập nhiệt độ hiện tại", 0));
+        }
+
+        alert(`Nhiệt độ hiện tại: ${C}!!!`);
+    </script>
+</body>
+</html>

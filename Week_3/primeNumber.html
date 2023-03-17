@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Số nguyên tố</title>
+</head>
+<body>
+    
+    <script>
+        let numbers = parseInt(prompt("Nhập số lượng số nguyên tố: "));
+        let count = 0;
+        let N = 2;
+
+        let text = "";
+        while (count < numbers) {
+            if (N == 2) {
+                text += `${N}`;
+                N++;
+            }
+            if (prime(N)) {
+                text += `, ${N}`;
+                N++;
+                count ++;
+            } else {
+                N++;
+            }
+        }
+
+
+        function prime(number) {
+            let result = true;
+            if (number == 2) {
+                return result = true;
+            } 
+            else {
+                for (let i = 2; i < number; i++) {
+                    if (number % i == 0) {
+                        return result = false;
+                    }
+                }
+                return result = true;
+            }
+        } 
+        
+        document.write(text);
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 8: Hãy thử đoán xem</title>
+</head>
+<body>
+
+    <h3>HÃY THỬ ĐOÁN XEM</h3>
+
+    <input type="button" value="Chơi" id="btnStart">
+    <script>
+
+        document.getElementById("btnStart").addEventListener("click", letsPlay);
+
+        function letsPlay() {
+            alert("Luật:");
+            alert("Bạn hãy nhập vào khoảng muốn đoán");
+            alert("Tôi sẽ chọn ra số ngẫu nhiên trong khoảng mà bạn chọn");
+            alert("Sau đó bạn nhập giá trị mà bạn đoán"); 
+            alert("Nếu lớn hơn hoặc bé thua thì sẽ báo, và bạn đc chọn lại"); 
+            alert("Bạn chỉ được chọn tối đa 3 lần"); 
+            alert("Nếu đúng thì bạn thắng!!!!"); 
+            
+            alert("Hãy nhập vào khoảng muốn đoán:");
+            let number1 = Number(prompt("Từ:"));
+            let number2 = 0;
+            do {
+                number2 = Number(prompt("Đến:"));
+            } while (number2 < number1);
+
+            let count = 2;
+
+            random = Math.floor(Math.random()*(number2-number1) + number1);
+            console.log(random);
+            
+            alert("Bây giờ, bạn hãy đoán xem là số nào??");
+            let number3 = Number(prompt("Số:"));
+
+            
+
+            do {
+                if (number3 == random) {
+                    alert("Bạn đã đoán đúng!!");
+                    break;
+                }
+                else if (count == 0) {
+                        alert("Bạn đã thua!");
+                        break;
+                    } else {
+                        alert(`Bạn đã đoán sai!! còn ${count} lần thử`);
+                        number3 = Number(prompt("Số:"));
+                        count --;
+                    }
+                
+            } while (count > -1);
+
+        }
+
+    </script>
+</body>
+</html>
