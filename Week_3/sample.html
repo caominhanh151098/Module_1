@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Screen</title>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td>Sample Screen:</td>
+            </tr>
+            <tr>
+                <td><input type="number" id="number"></td>
+                <td><input type="button" value="Add" id="addBtn"></td>
+                <td><input type="button" value="Display" id="displayBtn"></td>
+            </tr>
+        </tbody>
+    </table>
+    <label id="result"></label>
+
+    <script>
+        let array = [];
+        let x = 0;
+        document.getElementById("addBtn").addEventListener("click", add);
+        document.getElementById("displayBtn").addEventListener("click", display);
+
+        function add() {
+            array[x] = document.getElementById("number").value;
+            alert("Element: " + array[x] + " Added at index " + x);
+            x++;
+            document.getElementById("number").value = "";
+        }
+        function display() {
+            let text = "<hr/>";
+            array.forEach(function(item,index) {
+                text += `Element ${index}: ${item} <br>`;
+            });
+            document.getElementById("result").innerHTML = text;
+        }
+    </script>
+</body>
+</html>

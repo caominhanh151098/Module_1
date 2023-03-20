@@ -49,8 +49,14 @@
                 else if (count == 0) {
                         alert("Bạn đã thua!");
                         break;
-                    } else {
-                        alert(`Bạn đã đoán sai!! còn ${count} lần thử`);
+                    } 
+                    else if (number3 > random) {
+                        alert(`Bạn đã đoán lớn hơn!! Hãy thử số nhỏ! Còn ${count} lần thử`);
+                        number3 = Number(prompt("Số:"));
+                        count --;
+                    }
+                    else {
+                        alert(`Bạn đã đoán nhỏ hơn!! Hãy thử số lớn! Còn ${count} lần thử`);
                         number3 = Number(prompt("Số:"));
                         count --;
                     }
