@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caro Game</title>
+</head>
+<body>
+    <h3>Caro game</h3>
+    <p id="carogame"></p>
+    <input type="button" value="Change Value" id="btn">
+    <label id="result"></label>
+
+
+    <script>
+        document.getElementById("btn").addEventListener("click", change);
+        window.addEventListener("load", dataInput);
+        let x = document.getElementById("carogame");
+        let board = [];
+        let data = "";
+
+        for (let i = 0; i < 6; i++) {
+            board[i] = [0,0,0,0,0,0];
+        }
+
+        function dataInput() {
+            let data = "";
+            for (let i = 0; i < 6; i++) {
+                data += "<br>"
+                for (let j = 0; j < 6; j++) {
+                    data += board[i][j] + "&nbsp;&nbsp;&nbsp;"
+                }
+            }
+            x.innerHTML = data;
+        }
+
+        function change() {
+            let x = Number(prompt("X: "));
+            let y = Number(prompt("Y: "));
+
+            for (let i = 0; i < 6; i++) {
+                for (let j =0 ; j < 6; j++) {
+                    if (i == x && j == y) {
+                        board[i][j] = "x";
+                    }
+                }
+            }
+            dataInput();
+            checkwin();
+        }
+
+        function checkwin() {
+            for (let i = 0; i < 6; i++) {
+                for (let j = 0 ; j < 6; j++) {
+                    if (board[i][j] == "x" && board[i][j] == board[i][j+1] && board[i][j] == board[i][j+2] && board[i][j] == board[i][j+3] && board[i][j] == board[i][j+4]) {
+                        document.getElementById("result").innerText = "Win";
+                    }
+                    else if (board[i][j] == "x" && board[i][j] == board[i+1][j] && board[i][j] == board[i+2][j] && board[i][j] == board[i+3][j] && board[i][j] == board[i+4][j]) {
+                        document.getElementById("result").innerText = "Win";
+                    }
+                    else if (board[i][j] == "x" && board[i][j] == board[i+1][j+1] && board[i][j] == board[i+2][j+2] && board[i][j] == board[i+3][j+3] && board[i][j] == board[i+4][j+4]) {
+                        document.getElementById("result").innerText = "Win";
+                    }
+                    else if (board[i][j] == "x" && board[i][j] == board[i+1][j-1] && board[i][j] == board[i+2][j-2] && board[i][j] == board[i+3][j-3] && board[i][j] == board[i+4][j-4]) {
+                        document.getElementById("result").innerText = "Win";
+                    }
+
+
+                }
+            }
+        }
+    </script>
+</body>
+</html>

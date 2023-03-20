@@ -10,3 +10,5 @@ Loop: Bài tập về vòng lặp
 sample: Thực hành thao tác mảng
 
 reverse: Thực hành đảo mảng
+
+max: số lớn nhất trong mảng
