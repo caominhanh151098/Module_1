@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 6</title>
+</head>
+<body>
+
+    <script>
+        let text = "<pre>";
+        for (let i = 1; i <= 6; i++) {
+            for (let j = 1; j <=7; j++) {
+                text += (i == 1 && j == 1) || (i == 1 && j == 4) || 
+                        (i == 1 && j == 7) || (i == 4 && j == 1) ||
+                        (i == 4 && j == 7) || (i == 5 && j == 1) ||
+                        (i == 5 && j == 2) || (i == 5 && j == 6) ||
+                        (i == 5 && j == 7) || (i == 6 && j == 1) ||
+                        (i == 6 && j == 2) || (i == 6 && j == 3) ||
+                        (i == 6 && j == 5) || (i == 6 && j == 6) ||
+                        (i == 6 && j == 7) ? " " : "*";
+            }
+            text += "<br>";
+        }
+        text += "</pre>";
+
+        document.write(text);
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 5</title>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td>Số tiền ban đầu:</td>
+                <td><input type="number" id="money"></td>
+            </tr>
+            <tr>
+                <td>Số tháng cho vay:</td>
+                <td><input type="number" id="month"></td>
+            </tr>
+            <tr>
+                <td>Lãi xuất hàng tháng(%):</td>
+                <td><input type="number" id="rate"></td>
+                <td><input type="button" value="Tính" id="btn"></td>
+            </tr>
+            <tr>
+                <td>Lãi:</td>
+                <td><input type="number" id="result" disabled></td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <script>
+        document.getElementById("btn").addEventListener("click", result);
+
+        function result() {
+            let result = Number(document.getElementById("money").value);
+            let month = Number(document.getElementById("month").value);
+            let rate = Number(document.getElementById("rate").value);
+
+            for (let i = 1; i <= month; i++) {
+                result += (result * rate / 100);
+            }
+
+            document.getElementById("result").value = result;
+        }
+    </script>
+</body>
+</html>
