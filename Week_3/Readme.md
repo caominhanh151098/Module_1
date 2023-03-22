@@ -19,6 +19,7 @@ KhangTeacher: 1000 Bài tập của thầy Khang
 
 fake_text: Ứng dụng vui fakeText
 
+dictionary: Thư viện từ vựng
 
 
 [Ex] Sokoban: game Sokoban 

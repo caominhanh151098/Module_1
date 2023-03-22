@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+</head>
+
+<body>
+    <form action="">
+        <table>
+            <tbody>
+                <tr>
+                    <td>Nhập từ tiếng Anh: </td>
+                    <td>
+                        <input type="text" name="" id="text">
+                    </td>
+                    <td><input type="button" id="btn" value="Tìm"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label id="cache"></label>
+                    </td>
+                    <td>
+                        <label id="result"></label>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+    <script>
+        let eng = ["hello", "hi", "car", "banana", "apple", "laptop"];
+        let vie = ["Xin Chào", "Xin Chào", "Xe", "Minion", "Iphone 20 PRO MAX", "MSI GL65 Leopard"];
+        document.getElementById("btn").addEventListener("click", dictionary);
+
+        function dictionary() {
+            let text = document.getElementById("text").value;
+            let string = text.toLowerCase();
+            let result = "";
+
+            for (let i = 0; i < eng.length; i++) {
+                if (eng[i] == string) {
+                    result = vie[i];
+                }
+            }
+            if (result != "") {
+                document.getElementById("cache").innerText = `Tiếng Việt: `;
+                document.getElementById("result").innerText = `${result}`;
+            }
+            else {
+                alert("Không tìm thấy!");
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
