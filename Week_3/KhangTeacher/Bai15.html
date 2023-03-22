@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 15</title>
+</head>
+
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td>Input X:</td>
+                <td><input type="number" id="number"></td>
+                <td><button id="btn">Do Something</button><br></td>
+            </tr>
+        </tbody>
+    </table>
+    <label id="result"></label>
+
+
+    <script>
+        document.getElementById("btn").addEventListener("click", math)
+
+        function math() {
+
+            let x = Number(document.getElementById("number").value);
+            let result = 0;
+            let denominator = 0;
+
+            for (let i = 1; i <= x; i++) {
+                denominator += i;
+                result += 1/denominator;
+                console.log("1/" + denominator);
+                console.log("=" + result);
+            }
+
+            document.getElementById("result").innerText = `Result: ${result}`;
+        }
+    </script>
+</body>
+
+</html>

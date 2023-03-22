@@ -12,3 +12,13 @@ sample: Thực hành thao tác mảng
 reverse: Thực hành đảo mảng
 
 max: số lớn nhất trong mảng
+
+carro: tạo cờ carro cơ bản
+
+KhangTeacher: 1000 Bài tập của thầy Khang
+
+fake_text: Ứng dụng vui fakeText
+
+
+
+[Ex] Sokoban: game Sokoban 

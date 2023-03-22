@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 9</title>
+</head>
+
+<body>
+    <input type="number" id="number">
+    <button id="btn">Do Something</button><br>
+    <label id="result"></label>
+
+
+    <script>
+        document.getElementById("btn").addEventListener("click", multiplication)
+
+        function multiplication() {
+            let N = Number(document.getElementById("number").value);
+            let multi = 1;
+            for (let i = 1; i <= N; i++) {
+                multi *= i;
+            }
+
+            document.getElementById("result").innerText = `Result: ${multi}`;
+        }
+    </script>
+</body>
+
+</html>

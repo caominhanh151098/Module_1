@@ -1,35 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bài 5</title>
 </head>
+
 <body>
-    
+
     <script>
         alert("tổng của N số Fibonacci đầu tiên: ");
         let numbers = Number(prompt("Nhập số N: "));
-        let count = 1;
         let sum = 0;
+        let count = 3;
 
-        while (count <= numbers) {
-            sum += fibonacci(count);
-            count ++;
+
+        // while (count <= numbers) {
+        //     sum += fibonacci(count);
+        //     count ++;
+        // }
+
+        // document.write(sum);
+
+
+        // function fibonacci(number) {
+        //     if (number == 1 || number == 2)
+        //         return 1;
+        //     return fibonacci(number-1) + fibonacci(number-2);
+
+        // } 
+        let Fn_1 = 1;
+        let Fn_2 = 1;
+        if (number == 1) {
+            sum = 1;
         }
-
+        else {
+            sum = 2;
+            while (count <= numbers) {
+                var number = Fn_1 + Fn_2;
+                Fn_2 = Fn_1;
+                Fn_1 = number;
+                sum += number; 
+                count ++;
+                console.log(number);
+            }
+        }
         document.write(sum);
 
-
-        function fibonacci(number) {
-            if (number == 1 || number == 2)
-                return 1;
-            return fibonacci(number-1) + fibonacci(number-2);
-            
-        } 
-        
-        
     </script>
 </body>
+
 </html>

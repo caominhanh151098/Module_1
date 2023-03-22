@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 11</title>
+</head>
+
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td>Input n:</td>
+                <td><input type="number" id="number"></td>
+                <td><button id="btn">Do Something</button><br></td>
+            </tr>
+        </tbody>
+    </table>
+    <label id="result"></label>
+
+
+    <script>
+        document.getElementById("btn").addEventListener("click", sum)
+
+        function sum() {
+
+            let n = Number(document.getElementById("number").value);
+            let result = 0;
+            let cache = 1;
+            for (let i = 1; i <= n; i++) {
+                cache *= i;
+                result += cache;
+            }
+
+            document.getElementById("result").innerText = `Result: ${result}`;
+        }
+    </script>
+</body>
+
+</html>

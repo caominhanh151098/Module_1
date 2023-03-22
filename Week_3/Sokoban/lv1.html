@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sokoban lv1</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+    <h2>Sokoban lv1</h2>
+    <div class="leftcol">
+        <table id="dataGame">
+            <tbody>
+                <tr>
+                    <td><img id="11" src="img/wallBox.jpg"></td>
+                    <td><img id="12" src="img/wallBox.jpg"></td>
+                    <td><img id="13" src="img/wallBox.jpg"></td>
+                    <td><img id="14" src="img/wallBox.jpg"></td>
+                    <td><img id="15" src="img/wallBox.jpg"></td>
+                    <td><img id="16" src="img/wallBox.jpg"></td>
+                    <td><img id="17" src="img/wallBox.jpg"></td>
+                </tr>
+                <tr>
+                    <td><img id="21" src="img/wallBox.jpg"></td>
+                    <td><img id="22" src="img/images.png"></td>
+                    <td><img id="23" src=""></td>
+                    <td><img id="24" src=""></td>
+                    <td><img id="25" src=""></td>
+                    <td><img id="26" src=""></td>
+                    <td><img id="27" src="img/wallBox.jpg"></td>
+                </tr>
+                <tr>
+                    <td><img id="31" src="img/wallBox.jpg"></td>
+                    <td><img id="32" src=""></td>
+                    <td><img id="33" src=""></td>
+                    <td><img id="34" src=""></td>
+                    <td><img id="35" src="img/box.png"></td>
+                    <td><img id="36" src=""></td>
+                    <td><img id="37" src="img/wallBox.jpg"></td>
+                </tr>
+                <tr>
+                    <td><img id="41" src="img/wallBox.jpg"></td>
+                    <td><img id="42" src=""></td>
+                    <td><img id="43" src=""></td>
+                    <td><img id="44" src=""></td>
+                    <td><img id="45" src=""></td>
+                    <td><img id="46" src=""></td>
+                    <td><img id="47" src="img/wallBox.jpg"></td>
+                </tr>
+                <tr>
+                    <td><img id="51" src="img/wallBox.jpg"></td>
+                    <td><img id="52" src=""></td>
+                    <td><img id="53" src="img/box.png"></td>
+                    <td><img id="54" src=""></td>
+                    <td><img id="55" src=""></td>
+                    <td class="point"><img id="56"></td>
+                    <td><img id="57" src="img/wallBox.jpg"></td>
+                </tr>
+                <tr>
+                    <td><img id="61" src="img/wallBox.jpg"></td>
+                    <td class="point"><img id="62"></td>
+                    <td><img id="63" src=""></td>
+                    <td><img id="64" src=""></td>
+                    <td><img id="65" src=""></td>
+                    <td><img id="66" src=""></td>
+                    <td><img id="67" src="img/wallBox.jpg"></td>
+                </tr>
+                <tr>
+                    <td><img id="71" src="img/wallBox.jpg"></td>
+                    <td><img id="72" src="img/wallBox.jpg"></td>
+                    <td><img id="73" src="img/wallBox.jpg"></td>
+                    <td><img id="74" src="img/wallBox.jpg"></td>
+                    <td><img id="75" src="img/wallBox.jpg"></td>
+                    <td><img id="76" src="img/wallBox.jpg"></td>
+                    <td><img id="77" src="img/wallBox.jpg"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="leftcol">
+        <h3>Count</h3>
+        <input class="count" type="number" id="count" value="0" disabled>
+    </div>
+    <label id="cache" class="hide">22</label>
+    <label id="result" class="win"></label><br>
+    <label id="nextlv" class="next"></label>
+    <script src="lv1.js"></script>
+</body>
+
+</html>

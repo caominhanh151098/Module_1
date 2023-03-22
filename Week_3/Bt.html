@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+
+<body>
+    <!-- Tạo mảng có 5 phần tử -->
+    <!-- Tạo mảng có N phần tử nhập từ bàn phím -->
+    <!-- Tạo mảng có N phần tử có giá trị từ [0-50] -->
+    <!-- Tạo mảng có N phần tử có giá trị từ [min-max] -->
+    <!-- Tạo mảng có N phần tử có giá trị từ [min-max] với min, max nhập từ bàn phím -->
+    <!-- Kiểm tra max nếu max <= min thì nhập lại -->
+
+    <script>
+        let size = +prompt("Nhập số N:");
+        let array = new Array(size);
+        let min = +prompt("Nhập số khoảng từ: ");
+        let max = 0;
+        do {
+            max = +prompt("Đến: ");
+            if (max <= min)
+                alert("Nhập max lỗi; Yêu cầu nhập lại");
+        } while (max <= min);
+
+        let count = 0;
+
+        for (let i = 0; i < array.length; i++) {
+            array[i] = Math.floor(Math.random() * (max - min + 1) + min);
+            if (array[i] == 25)
+                count++;
+            console.log(array[i]);
+        }
+        console.log("=" + count);
+    </script>
+</body>
+
+</html>

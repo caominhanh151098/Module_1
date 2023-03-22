@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faking Text</title>
+</head>
+
+<body>
+    <form name="f">
+            <textarea name="text" cols="30" rows="10" onkeydown="typeTextarea()"></textarea>
+    </form>
+
+
+    <script>
+        let text = new Array();
+        text[1] = 'C'; text[2] = 'o'; text[3] = 'd'; text[4] = 'e'; text[5] = 'G'; text[6] = 'y'; text[7] = 'm'; text[8] = '!';
+        let output = "";
+
+        // document.f.text.addEventListener("keydown", fakeText);
+
+        function typeTextarea(){
+                let data = document.f.text.value;
+                j = data.length;
+                if(j > 0)
+                {
+                    for(var i=1; i<=j; i++)
+                    {
+                        output = output + text[i];
+                        if(i == 8)
+                        {
+                            document.f.text.value = "";
+                            output = "";
+                        }
+                    }
+                }
+                document.f.text.value = output;
+                output="";
+                setTimeout("typeTextarea()", 1);}
+    </script>
+</body>
+
+</html>

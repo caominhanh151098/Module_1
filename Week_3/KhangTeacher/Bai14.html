@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 14</title>
+</head>
+
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td>Input X:</td>
+                <td><input type="number" id="number"></td>
+                <td>Input n:</td>
+                <td><input type="number" id="power"></td>
+                <td><button id="btn">Do Something</button><br></td>
+            </tr>
+        </tbody>
+    </table>
+    <label id="result"></label>
+
+
+    <script>
+        document.getElementById("btn").addEventListener("click", math)
+
+        function math() {
+
+            let x = Number(document.getElementById("number").value);
+            let n = Number(document.getElementById("power").value);
+            let result = 0;
+
+            for (let i = 0; i <= n; i++) {
+                result += Math.pow(x,i*2+1);
+            }
+
+            document.getElementById("result").innerText = `Result: ${result}`;
+        }
+    </script>
+</body>
+
+</html>
