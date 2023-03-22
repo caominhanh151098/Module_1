@@ -9,9 +9,8 @@
 </head>
 
 <body>
-    <form name="f">
-            <textarea name="text" cols="30" rows="10" onkeydown="typeTextarea()"></textarea>
-    </form>
+    <h3>Faking Textarea on Typing</h3>
+    <textarea id="textarea" name="text" cols="30" rows="10" onkeydown="typeTextarea()"></textarea>
 
 
     <script>
@@ -21,24 +20,22 @@
 
         // document.f.text.addEventListener("keydown", fakeText);
 
-        function typeTextarea(){
-                let data = document.f.text.value;
-                j = data.length;
-                if(j > 0)
-                {
-                    for(var i=1; i<=j; i++)
-                    {
-                        output = output + text[i];
-                        if(i == 8)
-                        {
-                            document.f.text.value = "";
-                            output = "";
-                        }
+        function typeTextarea() {
+            let data = document.getElementById("textarea").value;
+            j = data.length;
+            if (j > 0) {
+                for (var i = 1; i <= j; i++) {
+                    output = output + text[i];
+                    if (i == 8) {
+                        document.getElementById("textarea").value = "";
+                        output = "";
                     }
                 }
-                document.f.text.value = output;
-                output="";
-                setTimeout("typeTextarea()", 1);}
+            }
+            document.getElementById("textarea").value = output;
+            output = "";
+            setTimeout("typeTextarea()", 1);
+        }
     </script>
 </body>
 
