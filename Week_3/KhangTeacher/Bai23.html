@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 23</title>
+</head>
+
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td>Input X:</td>
+                <td><input type="number" id="number"></td>
+                <td><button id="btn">Do Something</button><br></td>
+            </tr>
+        </tbody>
+    </table>
+    <label id="result"></label>
+
+    <script>
+        document.getElementById("btn").addEventListener("click", divisor);
+
+        function divisor() {
+            let n = Number(document.getElementById("number").value);
+            let text = "";
+            let count = 0;
+
+            for (let i = 1; i <= n; i++) {
+                if (n % i == 0) {
+                    text += i + "<br>";
+                    count++;
+                    console.log(text);
+                }
+            }
+
+            document.getElementById("result").innerHTML = text + "=" + count;
+        }
+    </script>
+</body>
+
+</html>

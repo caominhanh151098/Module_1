@@ -21,5 +21,7 @@ fake_text: Ứng dụng vui fakeText
 
 dictionary: Thư viện từ vựng
 
+TicTacToe: cờ caro 2 player
+
 
 [Ex] Sokoban: game Sokoban 
