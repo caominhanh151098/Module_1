@@ -27,4 +27,6 @@ ExArray: Bài tập* Array
 
 function: Thực hành Tạo và gọi hàm
 
+celsius: độ F chuyển độ C
+
 [Ex] Sokoban: game Sokoban 
