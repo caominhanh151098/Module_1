@@ -25,5 +25,6 @@ TicTacToe: cờ caro 2 player
 
 ExArray: Bài tập* Array
 
+function: Thực hành Tạo và gọi hàm
 
 [Ex] Sokoban: game Sokoban 
