@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 6</title>
+</head>
+
+<body>
+    <input type="text" id="number" style="width: 500px;">
+    <input type="number" id="number_1">
+    <button id="btn">Tính</button>
+    <label id="result"></label>
+
+    <script>
+        document.getElementById("btn").addEventListener("click", doSomething);
+        let numbers = new Array(10);
+
+        function doSomething() {
+            let number = +document.getElementById("number_1").value;
+            let stringNumber = document.getElementById("number").value;
+
+            numbers = stringNumber.split(",");
+            for (let i = 0; i < numbers.length; i++) {
+                if (Number(numbers[i]) == number) {
+                    return document.getElementById("result").innerText = `V is in the array`;
+                }
+                else
+                    document.getElementById("result").innerText = `V is not in the array`;
+            }
+        }
+    </script>
+</body>
+
+</html>

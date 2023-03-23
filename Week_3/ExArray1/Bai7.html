@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 7</title>
+</head>
+
+<body>
+    <input type="text" id="number" style="width: 500px;">
+    <input type="number" id="number_1">
+    <button id="btn">Tính</button>
+    <label id="result"></label>
+
+    <script>
+        document.getElementById("btn").addEventListener("click", doSomething);
+        let numbers = new Array(10);
+
+        function doSomething() {
+            let number = +document.getElementById("number_1").value;
+            let stringNumber = document.getElementById("number").value;
+
+            numbers = stringNumber.split(",");
+
+            for (let i = 0; i < numbers.length; i++) {
+                while (number == Number(numbers[i])) {
+                    numbers.splice(i, 1);
+                    numbers.splice(numbers.length, 0, 0)
+                }
+            }
+            document.getElementById("result").innerText = numbers;
+        }
+    </script>
+</body>
+
+</html>

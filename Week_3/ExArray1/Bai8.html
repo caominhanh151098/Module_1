@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 8</title>
+</head>
+
+<body>
+    <input type="text" id="number" style="width: 500px;">
+    <button id="btn">Tính</button>
+    <label id="result"></label>
+
+    <script>
+        document.getElementById("btn").addEventListener("click", doSomething);
+        let numbers = new Array(10);
+
+        function doSomething() {
+            let stringNumber = document.getElementById("number").value;
+
+            numbers = stringNumber.split(",");
+
+            numbers.sort(function (a, b) {
+                return b - a
+            });
+            document.getElementById("result").innerText = numbers;
+        }
+    </script>
+</body>
+
+</html>

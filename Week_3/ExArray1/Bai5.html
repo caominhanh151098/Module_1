@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 5</title>
+</head>
+
+<body>
+    <input type="text" id="number" style="width: 500px;">
+    <button id="btn">Tính</button>
+    <label id="result"></label>
+
+    <script>
+        document.getElementById("btn").addEventListener("click", doSomething);
+        let numbers = new Array();
+        let count = 0;
+
+        function doSomething() {
+            let stringNumber = document.getElementById("number").value;
+            numbers = stringNumber.split(",");
+            for (let i = 0; i < numbers.length; i++) {
+                if(Number(numbers[i]) < 0) {
+                    count ++;
+                }
+            }
+            document.getElementById("result").innerText = `Trong chuỗi có tổng cộng ${count} số nguyên âm`;
+        }
+    </script>
+</body>
+
+</html>

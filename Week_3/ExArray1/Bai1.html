@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1</title>
+</head>
+
+<body>
+    <input type="text" id="text" style="width: 500px;">
+    <button id="btn">Tính</button>
+    <label id="result"></label>
+
+
+    <script>
+        window.addEventListener("load", random);
+        document.getElementById("btn").addEventListener("click", doSomething);
+
+        let numbers = new Array(10);
+        
+
+        function random() {
+            
+            for (let i = 0; i < numbers.length; i++) {
+                numbers[i] = Math.floor(Math.random() * 20);
+            }
+            document.getElementById("text").value = numbers;
+        }
+        
+        function doSomething() {
+            let count = 0;
+            for (let i = 0; i < numbers.length; i++) {
+                if (numbers[i] >= 10) {
+                    count ++;
+                }
+            }
+            document.getElementById("result").innerText = `Có ${count} số lớn hơn hoặc bằng 10`;
+        }
+    </script>
+</body>
+
+</html>

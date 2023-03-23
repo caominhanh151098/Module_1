@@ -23,5 +23,7 @@ dictionary: Thư viện từ vựng
 
 TicTacToe: cờ caro 2 player
 
+ExArray: Bài tập* Array
+
 
 [Ex] Sokoban: game Sokoban 
