@@ -29,4 +29,6 @@ function: Thực hành Tạo và gọi hàm
 
 celsius: độ F chuyển độ C
 
+min: Tìm giá trị nhỏ nhất của mảng
+
 [Ex] Sokoban: game Sokoban 
