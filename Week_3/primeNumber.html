@@ -20,7 +20,7 @@
                 N++;
                 count ++;
             }
-            if (prime(N)) {
+            if (isPrime(N)) {
                 text += `, ${N}`;
                 N++;
                 count ++;
@@ -30,7 +30,7 @@
         }
 
 
-        function prime(number) {
+        function isPrime(number) {
             let result = true;
             if (number == 2) {
                 return result = true;

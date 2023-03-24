@@ -31,4 +31,6 @@ celsius: độ F chuyển độ C
 
 min: Tìm giá trị nhỏ nhất của mảng
 
+feetAndMeters: Chuyển đổi giữa feet và meters
+
 [Ex] Sokoban: game Sokoban 
