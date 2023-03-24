@@ -33,4 +33,6 @@ min: Tìm giá trị nhỏ nhất của mảng
 
 feetAndMeters: Chuyển đổi giữa feet và meters
 
+Function_1/2: Luyện tập tạo và sử dụng hàm;
+
 [Ex] Sokoban: game Sokoban 

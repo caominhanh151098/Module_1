@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3</title>
+</head>
+
+<body>
+    <input type="number" id="number_1">
+    <input type="number" id="number_2">
+    <button id="btn" onclick="doSomething(number_1.value, number_2.value)">Tính</button>
+    <label id="result"></label>
+
+    <script>
+        function doSomething(a, b) {
+            let numberA = Number(a);
+            let numberB = Number(b);
+
+            numberA > numberB ? alert("Số đầu lớn hơn số thứ hai!") : document.getElementById("result").innerText = numberA + numberB;
+        }
+
+    </script>
+</body>
+
+</html>

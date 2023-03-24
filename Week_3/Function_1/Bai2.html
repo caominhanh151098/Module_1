@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2</title>
+</head>
+<body>
+    <input type="number" id="number" onchange="change(this.value)">
+    <label id="result"></label>
+
+    <script>
+        function add1Value(value) {
+            let number = Number(value);
+            return number + 1;
+        }
+
+        function change(value) {
+            document.getElementById("result").innerText = add1Value(value);
+        }
+    </script>
+</body>
+</html>
