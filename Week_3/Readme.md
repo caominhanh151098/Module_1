@@ -35,4 +35,6 @@ feetAndMeters: Chuyển đổi giữa feet và meters
 
 Function_1/2: Luyện tập tạo và sử dụng hàm;
 
+Product: BT quản lý sản phẩm
+
 [Ex] Sokoban: game Sokoban 
