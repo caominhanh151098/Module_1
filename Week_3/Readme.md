@@ -37,4 +37,6 @@ Function_1/2: Luyện tập tạo và sử dụng hàm;
 
 Product: BT quản lý sản phẩm
 
+Palindrome: chuỗi Palindrome
+
 [Ex] Sokoban: game Sokoban 

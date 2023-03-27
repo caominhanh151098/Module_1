@@ -46,7 +46,9 @@ function edit(id) {
 function editProduct() {
     let editNewProduct = $("edit_product").value;
     let Id = $("id_Edit").value;
-    document.getElementsByClassName("name")[Id].innerText = editNewProduct;
+    Products[Id] = editNewProduct;
+    showProduct();
+    // document.getElementsByClassName("name")[Id].innerText = editNewProduct;
 }
 
 function deleteProduct(id) {
