@@ -43,4 +43,6 @@ Date: Thực hành Xây dựng lớp
 
 Circle: Thực hành Xây dựng lớp Hình tròn
 
+Funny_Circle: Thực hành tạo chục hình tròn
+
 [Ex] Sokoban: game Sokoban 
