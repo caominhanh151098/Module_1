@@ -39,4 +39,6 @@ Product: BT quản lý sản phẩm
 
 Palindrome: chuỗi Palindrome
 
+Date: Thực hành Xây dựng lớp Date
+
 [Ex] Sokoban: game Sokoban 

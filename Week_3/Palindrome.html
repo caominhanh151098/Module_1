@@ -11,6 +11,8 @@
 <body>
     <input type="text" id="name">
     <button id="btn">Check</button>
+    <label id="result"></label>
+    
 
     <script>
         document.getElementById("btn").addEventListener("click", () => isPalindrome(document.getElementById("name").value));
@@ -27,11 +29,11 @@
             for (let i = 0; i < string.length / 2; i++) {
                 if (string[i] != string[string.length - i - 1]) {
                     console.log(false);
-                    return false;
+                    return document.getElementById("result").innerText =  "False";
                 }
             }
             console.log(true);
-            return true;
+            return document.getElementById("result").innerText =  "False";
         }
     </script>
 </body>
