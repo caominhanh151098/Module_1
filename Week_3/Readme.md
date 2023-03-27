@@ -47,4 +47,6 @@ Funny_Circle: Thực hành tạo chục hình tròn
 
 Rectangle: Thực hành tạo hình chữ nhật
 
+Temperature: Bài tập mô tả lớp Temperature
+
 [Ex] Sokoban: game Sokoban 

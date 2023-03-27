@@ -32,13 +32,7 @@
 
             this.createRectangle = function () {
                 let ctx = document.getElementById("myCanvas").getContext("2d");
-                ctx.beginPath();
-                ctx.moveTo(0, 0);
-                ctx.lineTo(this.width, 0);
-                ctx.lineTo(this.width, this.height);
-                ctx.lineTo(0, this.height);
-                ctx.lineTo(0, 0);
-                ctx.stroke()
+                ctx.strokeRect(10,10, this.width, this.height);
             }
         }
 
