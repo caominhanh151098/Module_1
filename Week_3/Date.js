@@ -30,7 +30,9 @@ let myDate = function (date, month, year) {
     }
 
     this.toString = function () {
-        return `${this.date}/${this.month}/${this.year}`;
+        let day = this.date < 10 ? "0" + this.date : this.date;
+        let month = this.month < 10 ? "0" + this.month : this.month;
+        return `${day}/${month}/${this.year}`;
     }
 }
 
@@ -44,7 +46,7 @@ date.setYear(2020);
 let day = date.getDate();
 let month = date.getMonth();
 let year = date.getYear();
-date.setDate(15,10,1998);
+date.setDate(5,5,1998);
 
 console.log(date.toString());
 // console.log(`${day}/${month}/${year}`);

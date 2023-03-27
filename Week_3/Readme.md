@@ -45,4 +45,6 @@ Circle: Thực hành Xây dựng lớp Hình tròn
 
 Funny_Circle: Thực hành tạo chục hình tròn
 
+Rectangle: Thực hành tạo hình chữ nhật
+
 [Ex] Sokoban: game Sokoban 
