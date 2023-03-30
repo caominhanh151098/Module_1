@@ -15,17 +15,17 @@ function editabc(index) {
 }
 
 function showProduct() {
-    let text = "";
     Products.forEach(function (item, index) {
-        text += `<tr id=${index}>`;
-        text += `<td>${index}</td>`;
-        text += `<td class="name">${item}</td>`;
-        text += `<td><button onclick="edit(this.value)" value="${index}">Edit</button>
-                <button onclick="deleteProduct(this.value)" value="${index}">Delete</button></td>`;
-        text += "</tr>";
+        $("show").innerHTML +=
+        `
+            <tr id=${index}>
+            <td>${index}</td>
+            <td class="name">${item}</td>
+            <td><button onclick="edit(this.value)" value="${index}">Edit</button>
+                    <button onclick="deleteProduct(this.value)" value="${index}">Delete</button></td>
+            </tr>
+        `;
     });
-
-    $("show").innerHTML = text;
 }
 
 function addProduct() {

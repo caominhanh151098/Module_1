@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile</title>
+</head>
+
+<body>
+
+    <script>
+        let Mobile = function (battery, status) {
+            this.battery = battery;
+            this.status = status;
+
+            this.draft_Mes = new Array();
+            this.mes_To = new Array();
+            this.mes_Sent = new Array();
+
+            this.switch = function () {
+                this.status = this.status == "ON" ? "OFF" : "ON";
+            }
+            this.charging = function () {
+                this.battery = 100;
+            }
+
+            this.addDraft_Mes = function (mes) {
+                this.draft_Mes.push(mes);
+            }
+            this.addMes_Sent = function (mes) {
+                this.mes_Sent.push(mes);
+            }
+            this.addMes_To = function (mes) {
+                this.mes_To.push(mes);
+            }
+            
+
+        }
+    </script>
+</body>
+
+</html>

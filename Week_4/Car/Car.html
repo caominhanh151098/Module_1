@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car</title>
+    <link rel="stylesheet" href="css.css">
+
+</head>
+
+<body>
+    <div class="src">
+        <img id="car" src="png/carGoUp(1).png" />
+        <img id="trash" src="png/Trash-bag.png">
+        <img id="coin" src="png/coin.png">
+
+    </div>
+    <div class="domain">
+        <div>
+            <canvas id="game" width="1200px" height="630px" style="border: 1px solid;">
+            </canvas>
+        </div>
+        <div class="col_right">
+            <div class="show_point">
+                Point = <span id="point">0</span>
+            </div>
+            <div class="result_bar">
+                <span id="result"></span>
+            </div>
+            <div class="button_game" >
+                <button id="trybtn" style="display: none;" onClick="window.location.reload()">Try Again?</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="car.js"></script>
+</body>
+
+</html>
